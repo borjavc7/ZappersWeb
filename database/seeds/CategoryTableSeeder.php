@@ -24,6 +24,24 @@ class CategoryTableSeeder extends Seeder
 				'slug' => 'geek', 
 				'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, perferendis!', 
 				'color' => '#445500'
+			],
+			[
+				'name' => 'Peliculas', 
+				'slug' => 'peliculas', 
+				'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, perferendis!', 
+				'color' => '#1027F3'
+			],
+			[
+				'name' => 'Juegos', 
+				'slug' => 'juegos', 
+				'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, perferendis!', 
+				'color' => '#EF2929'
+			],
+			[
+				'name' => 'Infantil', 
+				'slug' => 'infantil', 
+				'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, perferendis!', 
+				'color' => '#F68DF6'
 			]
 		);
 

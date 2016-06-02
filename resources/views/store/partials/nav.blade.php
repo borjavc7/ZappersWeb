@@ -11,7 +11,7 @@
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <p class="navbar-text">My Laravel Store</p>
+      <p class="navbar-text">Zapatillas</p>
       <ul class="nav navbar-nav navbar-right">
         <li><a class="" href="{{ route('cart-show') }}"><i class="fa fa-shopping-cart"></i></a></li>
          @if(Session::get('cart'))

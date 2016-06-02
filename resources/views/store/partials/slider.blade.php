@@ -9,19 +9,19 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="http://www.5sos.com.au/store/skin/frontend/default/5SOS/images/5sos_banner_retry_AU.JPG" alt="slide1">
+        <img src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/11825566_918969368168611_657363373255430808_n.jpg?oh=db31611f3ec0a1268f83cd24917f074f&oe=5809A955" alt="slide1">
         <div class="carousel-caption">
           Slide 1
         </div>
       </div>
       <div class="item">
-        <img src="https://www.paradisowinkel.nl/media/wysiwyg/homepage/HOME1000000014.3.png" alt="slide2">
+        <img src="https://pbs.twimg.com/profile_banners/2501063264/1416152161/1500x500" alt="slide2">
         <div class="carousel-caption">
           Slide 2
         </div>
       </div>
       <div class="item">
-        <img src="http://theelectriczombie.com/blog14/rcshirts.jpg" alt="slide3">
+        <img src="http://www.otakuzone.es/assets/img/stands/7.jpg" alt="slide3">
         <div class="carousel-caption">
           Slide 3
         </div>

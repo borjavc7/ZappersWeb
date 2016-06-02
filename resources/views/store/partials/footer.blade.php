@@ -15,22 +15,16 @@
 			<h3>Siguenos</h3>
 			<ul class="redes">
 				<li>
-					<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+					<a href="https://www.facebook.com/Zappers-778775935521289/?fref=nf"><i class="fa fa-facebook-square fa-2x"></i></a>
 				</li>
 				<li>
-					<a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+					<a href="https://twitter.com/ZappersZapas"><i class="fa fa-twitter-square fa-2x"></i></a>
 				</li>
 				<li>
-					<a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+					<a href="http://zapperss.blogspot.com.es/"><i class="fa fa-google-plus-square fa-2x"></i></a>
 				</li>
 				<li>
-					<a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-				</li>
-				<li>
-					<a href="#"><i class="fa fa-youtube-square fa-2x"></i></a>
-				</li>
-				<li>
-					<a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+					<a href="https://www.instagram.com/zapperszapatillas/"><i class="fa fa-instagram fa-2x"></i></a>
 				</li>
 			</ul>
 			<h3>Escribenos:</h3>

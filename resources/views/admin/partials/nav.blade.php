@@ -7,16 +7,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {!! link_to('admin/home', "FiSO", $attributes = array('class' => 'navbar-brand main-title')) !!}
+      {!! link_to('admin/home', "ZAPPERS", $attributes = array('class' => 'navbar-brand main-title')) !!}
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <p class="navbar-text"><i class="fa fa-dashboard"></i> Dashboard</p>
+      <p class="navbar-text"><i class="fa fa-dashboard"></i> Panel de Administración</p>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Categorias</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Pedidos</a></li>
-        <li><a href="#">Usuarios</a></li>
+        <li><a href="{{ route('admin.category.index') }}">Categorias</a></li>
+        <li><a href="{{ route('admin.product.index') }}">Productos</a></li>
+        <li><a href="{{ route('admin.order.index') }}">Pedidos</a></li>
+        <li><a href="{{ route('admin.user.index') }}">Usuarios</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
             <i class="fa fa-user"></i> {{ Auth::user()->user }} <span class="caret"></span>
