@@ -4,6 +4,8 @@
 
 @include('store.partials.slider')
 
+@include('store.partials.filter')
+
 <div class="container text-center">
 	<div id="products">
 		@foreach($products as $product)

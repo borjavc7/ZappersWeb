@@ -70,11 +70,31 @@ Route::get('order-detail', [
 	'uses' => 'CartController@orderDetail'
 ]);
 
-Route::get('user-detail', [
-	'middleware' => 'auth:user',
+//control de perfil de usuario
+Route::get('menu-auth-user/{user}', [
+	'as' => 'menu-auth-user',
+	'uses' => 'UserController@index'
+]);
+
+Route::get('order-detail-user/34129876{id}1398574', [
+	'as' => 'order-detail-user',
+	'uses' => 'OrderController@index'
+]);
+
+Route::get('user-detail/34129876{id}1398574', [
 	'as' => 'user-detail',
 	'uses' => 'UserController@show'
 ]);
+
+Route::put('user-detail/34129876{id}1398574', [
+	'as' => 'user-detail-update',
+	'uses' => 'UserController@update'
+]);
+
+Route::post('order/get-items', [
+	    'as' => 'order-getItems',
+	    'uses' => 'OrderController@getItems'
+	]);
 
 
 // Authentication routes...
@@ -117,6 +137,12 @@ Route::get('payment/status', array(
 	'as' => 'payment.status',
 	'uses' => 'PaypalController@getPaymentStatus',
 ));
+
+//filtros de busqueda
+Route::get('/{id}', [
+	'as' => 'homeFilter',
+	'uses' => 'StoreController@scopeCategory'
+]);
 
 
 // ADMIN -------------

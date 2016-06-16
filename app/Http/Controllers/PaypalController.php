@@ -61,9 +61,9 @@ class PaypalController extends BaseController
 
 		$details = new Details();
 		$details->setSubtotal($subtotal)
-		->setShipping(100); //precio del envio
+		->setShipping(10); //precio del envio
 
-		$total = $subtotal + 100; 
+		$total = $subtotal + 10; 
 
 		$amount = new Amount();
 		$amount->setCurrency($currency)
@@ -178,7 +178,7 @@ class PaypalController extends BaseController
 	    
 	    $order = Order::create([
 	        'subtotal' => $subtotal,
-	        'shipping' => 100,
+	        'shipping' => 10,
 	        'user_id' => \Auth::user()->id
 	    ]);
 	    

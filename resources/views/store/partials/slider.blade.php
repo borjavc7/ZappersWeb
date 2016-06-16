@@ -11,19 +11,16 @@
       <div class="item active">
         <img src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/11825566_918969368168611_657363373255430808_n.jpg?oh=db31611f3ec0a1268f83cd24917f074f&oe=5809A955" alt="slide1">
         <div class="carousel-caption">
-          Slide 1
         </div>
       </div>
       <div class="item">
         <img src="https://pbs.twimg.com/profile_banners/2501063264/1416152161/1500x500" alt="slide2">
         <div class="carousel-caption">
-          Slide 2
         </div>
       </div>
       <div class="item">
         <img src="http://www.otakuzone.es/assets/img/stands/7.jpg" alt="slide3">
         <div class="carousel-caption">
-          Slide 3
         </div>
       </div>
   </div>
@@ -37,4 +34,4 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div><hr>
+</div>

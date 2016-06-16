@@ -19,7 +19,7 @@
                         @include('store.partials.errors')
                     @endif
                     
-                    {!! Form::model(Auth::user(), array('route' => array('admin.user.update', Auth::user()))) !!}
+                    {!! Form::model($user, array('route' => array('user-detail-update', $user->id))) !!}
                     
                         <input type="hidden" name="_method" value="PUT">
         
@@ -101,7 +101,7 @@
                                 ) 
                             !!}
                         </div>                        
-                        
+
                         <fieldset>
                             <legend>Cambiar password:</legend>
                             <div class="form-group">
@@ -135,7 +135,7 @@
                         
                         <div class="form-group">
                             {!! Form::submit('Actualizar', array('class'=>'btn btn-primary')) !!}
-                            <a href="{{ route('admin.user.index') }}" class="btn btn-warning">Cancelar</a>
+                            <a href="{{ route('menu-auth-user',Auth::user()->id) }}" class="btn btn-warning">Cancelar</a>
                         </div>
                     
                     {!! Form::close() !!}

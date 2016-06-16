@@ -50,6 +50,7 @@
 										<i class="fa fa-refresh"></i>
 									</a>
 								</td>
+								<!--<td><input type="number" step="0.5" min="18" max="48" /></td>-->
 								<td>{{ number_format($item->price * $item->quantity,2) }} €</td>
 								<td>
 									<a href="{{ route('cart-delete', $item->slug) }}" class="btn btn-danger">

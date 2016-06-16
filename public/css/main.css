@@ -2,6 +2,7 @@ body
 {
 	background: orange;
 	font-family: 'Poiret One', cursive;
+	font-weight: bold;
 }
 
 h1,h2,h3,h4,h5,h6
@@ -47,16 +48,33 @@ ul.redes li a
 	width: 100px;
 }
 
+.icon-home
+{
+    color: #666;
+    font-size: 50px;
+    margin: 20px;
+}
+
+.btn-home-admin
+{
+    font-size:20px;
+}
+
 /* Catalogo -------------*/
 #products {
 position: relative;
 max-width: 100%;
 width: 100%;
 }
-img {
+.white-panel img {
 width: 100%;
 max-width: 100%;
 height: auto;
+}
+.product-block img{
+width: 100%;
+max-width: 100%;
+height: auto;	
 }
 .white-panel {
 position: absolute;

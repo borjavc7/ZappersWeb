@@ -7,7 +7,7 @@
 		<div class="col-md-4">
 			<h3>Desarrollado por:</h3>
 			<div class="author-info">
-				<img src="https://pbs.twimg.com/profile_images/534308429049778178/gKUJNdKQ.jpeg" alt="" class="avatar">
+				<img src="{{asset('image/BORTECWEB.png')}}" alt="" class="avatar">
 				<p><a href="https://twitter.com/Borjavc7">@borjavc7</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum excepturi possimus tempora porro, a est atque? Rem eaque, ullam, dolore fugit cupiditate odio ipsum fugiat quae, error accusantium corporis harum voluptatem perspiciatis dolorem pariatur iste id temporibus voluptatum enim dicta.</p>
 			</div>
 		</div>

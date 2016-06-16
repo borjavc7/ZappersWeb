@@ -4,7 +4,7 @@
 			<i class="fa fa-user"></i> {{ Auth::user()->user }} <span class="caret"></span>
 		</a>
 		<ul class="dropdown-menu" role="menu">
-			<li><a href="{{ route('user-detail') }}">Mis Datos</a></li>
+			<li><a href="{{ route('menu-auth-user') }}">Mis Datos</a></li>
 			<li><a href="{{ route('logout') }}">Finalizar sesión</a></li>
 		</ul>
 	</li>

@@ -21,9 +21,10 @@ class UserController extends Controller
         if(!\Session::has('user')) \Session::put('user', array());
     }
 
-    public function index()
+    public function index(User $user)
     {
-        //
+     
+     return view('store.menu-auth-user', compact('user'));
     }
 
     /**
@@ -53,13 +54,11 @@ class UserController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function show()
+    public function show($id)
     {
-
-        $cart = \Session::get('user');
-
+        $user = User::find($id);
+    
         return view('store.user-detail', compact('user'));
-
     }
 
     /**
@@ -70,7 +69,7 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('user-detail', compact('user'));
     }
 
     /**
@@ -82,7 +81,27 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'name'      => 'required|max:100',
+            'last_name' => 'required|max:100',
+            'email'     => 'required|email',
+            'user'      => 'required|min:4|max:20',
+            'password'  => ($request->get('password') != "") ? 'required|confirmed' : "",
+        ]);
+        $user = User::find($id);
+        $user->name = $request->get('name');
+        $user->last_name = $request->get('last_name');
+        //$user->email = $request->get('email');
+        $user->user = $request->get('user');
+        $user->address = $request->get('address');
+        //$user->active = $request->has('active') ? 1 : 0;
+        if($request->get('password') != "") $user->password = \Hash::make($request->get('password'));
+        
+        $updated = $user->save();
+        
+        $message = $updated ? 'Usuario actualizado correctamente!' : 'El Usuario NO pudo actualizarse!';
+        
+        return redirect()->route('home')->with('message', $message);
     }
 
     /**
